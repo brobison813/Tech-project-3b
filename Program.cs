@@ -1,9 +1,10 @@
 ﻿using System;
+using System.Threading;
 /* Programmer Brian Robison
- * Tech project 3b
- * ISM 3400
- * The purpose of this program is to demostrae the use of arrays
- */
+* Tech project 3b
+* ISM 3400
+* The purpose of this program is to demostrae the use of arrays
+*/
 namespace Tech_porject_3b
 {
     class Program
@@ -12,7 +13,16 @@ namespace Tech_porject_3b
         {
             //manually defining array 
             int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 11, 12, 13, 14, 15, 16, 17, 18, 19, 10, 21, 22, 23, 24, 25 };
-            //Displaying vaules of array  
+            int count = 0;
+           //forech loop to display the contents of the array.
+            foreach (int element in numbers)
+            {
+
+                Console.WriteLine("Element Value = " + numbers[count]);
+                count++;
+
+            }
+            /*Displaying vaules of array  
             Console.WriteLine("Element Value = " + numbers[0]);
             Console.WriteLine("Element Value = " + numbers[1]);
             Console.WriteLine("Element Value = " + numbers[2]);
@@ -37,7 +47,7 @@ namespace Tech_porject_3b
             Console.WriteLine("Element Value = " + numbers[21]);
             Console.WriteLine("Element Value = " + numbers[22]);
             Console.WriteLine("Element Value = " + numbers[23]);
-            Console.WriteLine("Element Value = " + numbers[24]);
+            Console.WriteLine("Element Value = " + numbers[24]);*/
         }//end of main
     }//end of class
 }//end of namespace
